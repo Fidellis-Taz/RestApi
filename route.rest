@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers
+
+###
+ 
+
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name": "Fidellis",
+    "subscribedToChannel": "Dango Code"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/603e77f498c37658142a8747 
+Content-Type: application/json
+
+{
+    "name": "dango"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/603e77f498c37658142a8747 
